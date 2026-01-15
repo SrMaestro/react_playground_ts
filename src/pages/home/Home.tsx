@@ -1,7 +1,14 @@
-﻿
-function Home() {
+﻿interface HomeProps {
+  titulo: string
+  texto : string
+}
+
+function Home({titulo, texto}: HomeProps) {
   return (
-    <div>Componente Home</div>
+    <div>
+      <h2>{titulo}</h2>
+      <p>{texto}</p>
+    </div>
   )
 }
 
